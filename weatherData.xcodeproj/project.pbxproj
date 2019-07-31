@@ -12,6 +12,9 @@
 		4926C64F22EF504A00D831D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4926C64D22EF504A00D831D8 /* Main.storyboard */; };
 		4926C65122EF504E00D831D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4926C65022EF504E00D831D8 /* Assets.xcassets */; };
 		4926C65422EF504E00D831D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4926C65222EF504E00D831D8 /* LaunchScreen.storyboard */; };
+		4926C65D22EF535200D831D8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4926C65C22EF535200D831D8 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		495E4DEE22F06D710019919A /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 495E4DED22F06D710019919A /* image.jpg */; };
+		495E4DF022F14ACE0019919A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E4DEF22F14ACE0019919A /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4926C65022EF504E00D831D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4926C65322EF504E00D831D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4926C65522EF504E00D831D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4926C65C22EF535200D831D8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		495E4DED22F06D710019919A /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		495E4DEF22F14ACE0019919A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4926C65D22EF535200D831D8 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				4926C64822EF504A00D831D8 /* weatherData */,
 				4926C64722EF504A00D831D8 /* Products */,
+				4926C65B22EF535100D831D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +64,22 @@
 			children = (
 				4926C64922EF504A00D831D8 /* AppDelegate.swift */,
 				4926C64B22EF504A00D831D8 /* ViewController.swift */,
+				495E4DEF22F14ACE0019919A /* WebViewController.swift */,
 				4926C64D22EF504A00D831D8 /* Main.storyboard */,
 				4926C65022EF504E00D831D8 /* Assets.xcassets */,
 				4926C65222EF504E00D831D8 /* LaunchScreen.storyboard */,
+				495E4DED22F06D710019919A /* image.jpg */,
 				4926C65522EF504E00D831D8 /* Info.plist */,
 			);
 			path = weatherData;
+			sourceTree = "<group>";
+		};
+		4926C65B22EF535100D831D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4926C65C22EF535200D831D8 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495E4DEE22F06D710019919A /* image.jpg in Resources */,
 				4926C65422EF504E00D831D8 /* LaunchScreen.storyboard in Resources */,
 				4926C65122EF504E00D831D8 /* Assets.xcassets in Resources */,
 				4926C64F22EF504A00D831D8 /* Main.storyboard in Resources */,
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4926C64C22EF504A00D831D8 /* ViewController.swift in Sources */,
+				495E4DF022F14ACE0019919A /* WebViewController.swift in Sources */,
 				4926C64A22EF504A00D831D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
